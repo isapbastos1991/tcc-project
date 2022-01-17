@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page de marcação de aulas coletivas</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="custom-logo" src="assets/img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#precos">Preços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contatos">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim Menu de Navegação -->
+
+    <!--Carrosel-->
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active"
+                    style="background-image: url('./assets/img/001.jpeg')">
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item"
+                    style="background-image: url('./assets/img/002.jpeg')">
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item"
+                    style="background-image: url('./assets/img/003.jpeg')">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Third Slide</h2>
+                        <p class="lead">This is a description for the third slide.</p>
+                    </div> -->
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <!--Fim do Carrosel-->
+
+    <hr class="featurette-divider">
+
+    <a id="sobre"></a>
+    <div class="container">
+
+        <!--Sobre-->
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Oie tudo bem?</h2>
+                <p class="lead">Esse site foi criado com o propósito de reunir pessoas com o mesmo objetivo de fazer aulas coletivas e encontrar um professor que esteja disposto a lecionar essas aulas.
+                    <br />
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid rounded-top mx-auto" src="./assets/img/professor.jpeg"
+                    alt="professor">
+            </div>
+        </div>
+        <!--Fim do Sobre-->
+
+
+
+        <!--Preços-->
+        <a id="precos"></a>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4">Valores</h1>
+            <p class="lead">Confira os valores dos nossos ensaios.</p>
+        </div>
+
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Plano 1 aula</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">R$ 49<small class="text-muted">,00</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>1 aula com o professor que você escolher</li>
+                        <li>Parcelamento em até 2x sem juros</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Comprar</button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Plano Semana</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">R$ 99<small class="text-muted">,00</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Pacote de 3 aulas com o professor da sua escolha que pode ser usado em até duas semanas</li>
+                        <li>Parcelamento em até 3x sem juros</li>
+
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Comprar</button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Plano Mensal</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">R$ 249<small class="text-muted">,00</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>Pacote de 8 aulas com o professor da sua escolha que pode ser usado em até dois meses</li>
+                      <li>Parcelamento em até 5x sem juros</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <!--Fim Preços-->
+
+        <!--Contatos-->
+        <a id="contatos"></a>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4">Contatos</h1>
+            <p class="lead">
+
+                Entre em contato:
+
+                <p>
+
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5532984339579&text=Ol%C3%A1!">
+                        <button class="btn btn-outline-secondary"><i class="fab fa-whatsapp"></i> Whatsapp</button>
+                    </a>
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237205.1986722249!2d-43.522609599388815!3d-21.72868094403851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c43e1f85da1%3A0x6236b026b3a0a468!2sJuiz%20de%20Fora%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1642361896220!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </p>
+        </div>
+        <!--Fim do Contatos-->
+
+    </div>
+
+
+
+
+
+        <!-- <h1>Hello World!</h1> -->
+
+</body>
+
+</html>
